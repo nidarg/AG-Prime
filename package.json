@@ -1,0 +1,14 @@
+{
+  "name": "agprime",
+  "version": "1.0.0",
+  "description": "AG Prime landing page",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "GG",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

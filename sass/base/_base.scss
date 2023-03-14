@@ -1,0 +1,84 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;600;700&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;600;700&display=swap');
+
+
+
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Prompt, sans-serif,Roboto Mono', monospace;
+    color: $white-text;
+    font-size: $reg-font-size;
+}
+
+// img:not(.nav-logo){
+//     display: block;
+//     width: 100%;
+// }
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color:$white-text;
+}
+
+.nav__links {
+    position: relative;
+}
+
+.nav__links li{
+    position: relative;
+}
+
+// .products{
+//     height:13vh ;
+// }
+
+.products:hover{
+    
+    .nav__sublinks,
+    .sidebar__sublinks {
+       transition: 1s ease;
+        display: block;
+    }
+    
+}
+
+.nav__sublinks,
+.sidebar__sublinks{
+    display: none;
+    position: absolute;
+    background-color: $white-text;
+    min-width:16rem;
+    z-index: 1;
+
+    & a{
+        color: $black-text;
+        display: block;
+        padding: 1rem;
+    }
+}
+
+.toggle{
+    transform: scale(1.2);
+    transition: $transition;
+}
+
+
+
